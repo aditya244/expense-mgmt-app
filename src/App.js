@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from './Containers/Home/Home';
+import Profile from './Containers/Profile/Profile';
+import Settings from './Containers/Settings/Settings';
+import { Container, Nav } from 'react-bootstrap';
+import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return  (
+          <BrowserRouter>
+              <Nav className="flex-column Navbar">
+                <NavLink to="/" exact ><li activeClassName = "button_active" className="nav-item" >Home</li></NavLink>
+                <NavLink to="/profile"><li activeClassName = "button_active" className="nav-item" >Profile</li></NavLink>
+                <NavLink to="/settings"><li activeClassName = "button_active" className="nav-item" >Settings</li></NavLink>
+              </Nav>
+              <Route path="/" exact component={Home}/>
+              <Route path="/profile" exact component={Profile}/>
+              <Route path="/settings" exact component={Settings}/>
+          </BrowserRouter>
+    )
+  }
 }
 
 export default App;
