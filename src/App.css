@@ -54,3 +54,19 @@
 .divHeading {
   border-bottom: solid 1px black
 }
+
+.categoryList{
+  text-align: center;
+  width: 500px;
+  height: auto;
+  margin-top: 20px;
+  margin-right: auto;
+  float: left;
+  border: solid 1px #274C77;
+}
+
+.categoryName{
+  padding: 7px;
+  border: none;
+  border-bottom: solid 0.5px #274C77;
+}

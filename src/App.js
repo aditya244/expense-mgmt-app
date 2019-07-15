@@ -19,9 +19,18 @@ class App extends Component {
               <Route path="/" exact component={Home}/>
               <Route path="/profile" exact component={Profile}/>
               <Route path="/settings" exact component={Settings}/>
+              {console.log(this.props.category_names)}
           </BrowserRouter>
     )
   }
 }
+
+// const mapStateToProps = (state) => {
+//   return {
+//       category_names: state
+//   }
+// };
+
+// export default connect(mapStateToProps)(App);
 
 export default App;

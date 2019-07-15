@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BudgetOverview from '../../Components/BudgetOverview/BudgetOverview';
-import CategoryWiseSplit from '../../Components/CategoryWiseSplit/CategoryWiseSplit';
+import BudgetOverview from '../../Components/Budget/BudgetOverview/BudgetOverview';
+import CategoryWiseSplit from '../../Components/Category/CategoryWiseSplit/CategoryWiseSplit';
 import Fragments from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 

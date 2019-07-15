@@ -6,7 +6,9 @@ const categoryWiseSplit = (props) => (
             <div className="divHeading">
                 <label className="heading">CategoryWiseSplit </label>
             </div>
-            <div className="divContent"></div>
+            <div className="divContent">
+                
+            </div>
         </div>
 );
 

@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
+import Categories from '../../Components/Category/Categories/Categories';
+import TotalBudget from '../../Components/Budget/TotalBudget/TotalBudget';
+import { connect } from 'react-redux';
 
 class Settings extends Component{
     render() {
         return (
             <Container>
-                <Form className="form_container">
-                    <Row>
-                        <Col>
-                            <label className="label-text">Total Budget</label>
-                        </Col>
-                        <Col>
-                            <Form.Control/>
-                        </Col>
-                        <Col>
-                            <Button variant="success"> Update</Button>
-                        </Col>
-                    </Row>
-                </Form>
+                <TotalBudget/>
+                <Categories category_names={this.props.category_names}/>
             </Container>
         )
     }
 }
 
-export default Settings;
+
+const mapStateToProps = (state) => {
+    return {
+        category_names: state
+    }
+  };
+  
+//export default (App);
+
+export default connect(mapStateToProps)(Settings);
