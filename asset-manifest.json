@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/expense-mgmt-app/static/css/main.a51d3c00.chunk.css",
+    "main.js": "/expense-mgmt-app/static/js/main.327c55d5.chunk.js",
+    "main.js.map": "/expense-mgmt-app/static/js/main.327c55d5.chunk.js.map",
+    "runtime~main.js": "/expense-mgmt-app/static/js/runtime~main.fd625510.js",
+    "runtime~main.js.map": "/expense-mgmt-app/static/js/runtime~main.fd625510.js.map",
+    "static/js/2.23575782.chunk.js": "/expense-mgmt-app/static/js/2.23575782.chunk.js",
+    "static/js/2.23575782.chunk.js.map": "/expense-mgmt-app/static/js/2.23575782.chunk.js.map",
+    "index.html": "/expense-mgmt-app/index.html",
+    "precache-manifest.197c551e0fb7c5806e75511d377afe9e.js": "/expense-mgmt-app/precache-manifest.197c551e0fb7c5806e75511d377afe9e.js",
+    "service-worker.js": "/expense-mgmt-app/service-worker.js",
+    "static/css/main.a51d3c00.chunk.css.map": "/expense-mgmt-app/static/css/main.a51d3c00.chunk.css.map",
+    "static/media/logo.svg": "/expense-mgmt-app/static/media/logo.5d5d9eef.svg"
+  }
+}
